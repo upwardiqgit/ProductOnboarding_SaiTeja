@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#left-nav {
+    width: 200px;
+}
+
+#left-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#left-nav ul li {
+    margin: 10px 0;
+}
+
+#left-nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#product-onboarding {
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}

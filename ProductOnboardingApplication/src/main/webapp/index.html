@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductOnboarding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<1body>
+    <div id="left-nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="save.html">Save Product</a></li>
+            <li><a href="search.html">Search Products</a></li>
+        </ul>
+    </div>
+
+    <div id="product-onboarding">
+        <h2>Product Onboarding</h2>
+        <form id="product-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required>
+            <div id="name-error" class="error"></div>
+
+            <label>Product Status:</label>
+            <input type="radio" id="active" name="status" value="active" required> Active
+            <input type="radio" id="inactive" name="status" value="inactive"> Inactive
+
+            <label>Product Category:</label>
+            <input type="checkbox" id="electronics" name="category" value="electronics"> Electronics
+            <input type="checkbox" id="furniture" name="category" value="furniture"> Furniture
+            <input type="checkbox" id="clothing" name="category" value="clothing"> Clothing
+
+            <label for="product-description">Product Description:</label>
+            <textarea id="product-description" name="description" rows="4" required></textarea>
+
+            <button type="button" id="submit-btn">Submit</button>
+            <button type="reset" id="reset-btn">Reset</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
